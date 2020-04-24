@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import CROW from './CROW';
 import Header from './Header';
+import Footer from './Footer';
 import _Date_ from './Date';
 const DEFAULT_API_URL= "https://api.exchangeratesapi.io/latest?base=USD&symbols=GBP,EUR,RUB,CNY,HKD,JPY,KRW";
 const API_URL = "https://api.exchangeratesapi.io/latest";
@@ -89,10 +90,7 @@ function App() {
       </div>
       <_Date_/>
 
-      <div className="footer">
-        <h5>Justin Krasner | CISC3140</h5>
-        <h6>Powered by exchangeratesapi.io</h6>
-      </div>
+      <Footer/>
     </>
   );
   
